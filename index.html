@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Brushify</title>
+</head>
+<body>
+    <center>
+        <h1>Brushify</h1>
+        <br><br><br><br>
+        <div id="editor" contenteditable="true"></div>
+        <br><br><br>
+        <div id="parent ">
+            <div id="child">
+                <h1>Backgroundcolor</h1>
+                <br><br>
+                <button class="bg" onclick="bgc('hot pink')"  style="background-color:   hotpink;"></button>
+                <button class="bg" onclick="bgc('black')" style="background-color: black ;" ></button>
+                 <button class="bg" onclick="bgc('pink')" style="background-color: pink;" ></button>
+                 <button class="bg" onclick="bgc('green')" style="background-color: green;" ></button>
+                 <button class="bg" onclick="bgc('red')" style="background-color: red;" ></button>
+             </div>
+              <div id="child">
+                <h1>Textcolor</h1>
+                <br><br>
+                <button class="bg" onclick="Textcolor('orange')" style="background-color: orange; "></button>
+                <button class="bg" onclick="Textcolor('white')" style="background-color: white; border: 1px solid black;"></button>
+                <button class="bg" onclick="Textcolor('navy')" style="background-color: navy;"></button>
+                <button class="bg" onclick="Textcolor('black')" style="background-color: rgb(29, 12, 29);"></button>
+                <button class="bg" onclick="Textcolor('green')" style="background-color: green;"></button>
+            </div>
+              <div id="child">
+                <h1>FontStyle</h1>
+                <br><br>
+                <button class="funcs" onclick="font('sans-serif')" >Sachin</button>
+                <button class="funcs" onclick="font('serif')" >virat</button>
+                 <button class="funcs" onclick="font('Arial')" >rohit</button>
+                  <button class="funcs" onclick="font('fantasy')" >dhoni</button>
+                    <button class="funcs" onclick="font('cursive')" >rahul</button>
+                
+            </div>
+        </div>
+    </center>
+
+    <script>
+        function bgc(color){
+            document.getElementById('editor').style.backgroundColor = color
+        }
+         function Textcolor(color){
+            document.getElementById('editor').style.color = color
+        }
+         function font(font){
+            document.getElementById('editor').style.fontFamily = font
+        }
+    </script>
+    
+</body>
+</html>
